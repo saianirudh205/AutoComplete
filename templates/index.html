@@ -54,14 +54,14 @@ div {
 
     <br>
     <br>
-    <form action="add_loc" method='post'>
+    <form action="{{ url_for('add_loc') }}" method='post'>
     <label for="lname">Insert City</label>
     <input type="text" id="lname" name="city" placeholder="Type">
      <input type="submit" value="Submit">
     </form>
     <br>
     <br>
-    <form action="delete" method="post">
+    <form action="{{ url_for('delete') }}" method="post">
     <label for="lname">Delete City</label>
     <input type="text"  name="city" placeholder="Type">
     <input type="submit" value="Submit">
