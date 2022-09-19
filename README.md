@@ -29,6 +29,6 @@ you may now run the app.py file
       
       
   or you can just open the app.py file using python IDLE and run the file from there 	                                                                        																											
-  
+then you get the local ip on which you can view the page
   
 
