@@ -10,7 +10,7 @@ def home():
 
 @app.route('/add_loc',methods=['POST'])
 def add_loc():
-   
+    #adding or inserting a new location
     if request.method == 'POST':
         a=request.form['city']
         return render_template('index.html',data=Trie().insert(a))
@@ -21,7 +21,7 @@ def add_loc():
 
 @app.route('/delete',methods=['POST'])
 def delete():
-   
+    #deleting location
     if request.method == 'POST':
         a=request.form['city']
         return render_template('index.html',data=Trie().delete(a))
